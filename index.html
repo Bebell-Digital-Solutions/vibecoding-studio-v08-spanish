@@ -7,6 +7,30 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 
+		<!-- ICONS CODE -->
+<script> function removeFromLinks(rel) {
+for (link of document.head.getElementsByTagName("link")) {
+if (link.rel == rel) {
+document.head.removeChild(link);
+}
+};
+}
+function createNewFavicon(rel, img) {
+var newFavicon = document.createElement("link");
+newFavicon.type = "image/png";
+newFavicon.rel = rel;
+newFavicon.href = img;
+var firstHeadElement = document.head.firstChild;
+document.head.insertBefore(newFavicon, firstHeadElement);
+}
+removeFromLinks("icon");
+removeFromLinks("shortcut icon");
+removeFromLinks("apple-touch-icon");
+createNewFavicon("icon", "https://bucket.mlcdn.com/a/3336/3336910/images/8693866308ced9e7451285a4fc716d1d589c8bc4.png");
+createNewFavicon("shortcut icon", "https://bucket.mlcdn.com/a/3336/3336910/images/8693866308ced9e7451285a4fc716d1d589c8bc4.png");
+createNewFavicon("apple-touch-icon", "https://bucket.mlcdn.com/a/3336/3336910/images/8693866308ced9e7451285a4fc716d1d589c8bc4.png"); </script>
+<!-- End ICONS Code -->
+    
 	
 	
 	<style>
